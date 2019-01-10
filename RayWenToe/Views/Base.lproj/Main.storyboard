@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R2C-Pb-cxJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R2C-Pb-cxJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="GameplayViewController" customClass="GameplayViewController" customModule="RayWenToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GameplayView" customModule="RayWenToe" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY0-AU-iSx">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem image="ic_settings" id="5Tk-oB-CYj">
                                         <connections>
@@ -27,7 +28,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="uU6-u2-570"/>
                                     <barButtonItem style="plain" id="hYY-ex-9mc">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fmC-CE-QTW">
-                                            <rect key="frame" x="225" y="6" width="150" height="32"/>
+                                            <rect key="frame" x="112.5" y="6" width="150" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -54,16 +55,16 @@
                                 <color key="barTintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jwl-I0-trs">
-                                <rect key="frame" x="16" y="96" width="568" height="59"/>
+                                <rect key="frame" x="16" y="96" width="343" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="951" verticalHuggingPriority="951" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-Z9-8un">
-                                        <rect key="frame" x="0.0" y="0.0" width="568" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="950" verticalHuggingPriority="950" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="5 Moves Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY0-Vp-lHD">
-                                        <rect key="frame" x="0.0" y="33.5" width="568" height="25.5"/>
+                                        <rect key="frame" x="0.0" y="33.5" width="343" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,10 +75,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6q-GQ-yxN" userLabel="Container View">
-                                <rect key="frame" x="16" y="163" width="568" height="377"/>
+                                <rect key="frame" x="16" y="163" width="343" height="444"/>
                                 <subviews>
                                     <view contentMode="redraw" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Owf-mJ-Svn" customClass="GameboardView" customModule="RayWenToe" customModuleProvider="target">
-                                        <rect key="frame" x="95.5" y="0.0" width="377" height="377"/>
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="343"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Owf-mJ-Svn" secondAttribute="height" multiplier="1:1" id="DgA-TU-DI7"/>
@@ -134,14 +135,14 @@
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" id="CRf-TT-L1g" customClass="SettingsViewController" customModule="RayWenToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qpp-m7-GQ2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dk5-X8-XKV">
-                                <rect key="frame" x="20" y="102" width="560" height="276"/>
+                                <rect key="frame" x="20" y="129" width="335" height="276"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-S9-9zP">
-                                        <rect key="frame" x="139" y="0.0" width="283.5" height="91"/>
+                                        <rect key="frame" x="26" y="0.0" width="283.5" height="91"/>
                                         <string key="text">Select Gameplay
 Mode</string>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
@@ -149,7 +150,7 @@ Mode</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nm-6x-cIE">
-                                        <rect key="frame" x="177" y="121" width="207" height="46"/>
+                                        <rect key="frame" x="64" y="121" width="207" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="One Player Mode"/>
                                         <connections>
@@ -157,13 +158,13 @@ Mode</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="play versus a computer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-fB-lOa">
-                                        <rect key="frame" x="196" y="167" width="168.5" height="19.5"/>
+                                        <rect key="frame" x="83.5" y="167" width="168.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEE-dM-zOb">
-                                        <rect key="frame" x="177" y="210.5" width="206" height="46"/>
+                                        <rect key="frame" x="64.5" y="210.5" width="206" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Two Player Mode"/>
                                         <connections>
@@ -171,7 +172,7 @@ Mode</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="play with a friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89u-Zj-CjA">
-                                        <rect key="frame" x="219" y="256.5" width="123.5" height="19.5"/>
+                                        <rect key="frame" x="106" y="256.5" width="123.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
